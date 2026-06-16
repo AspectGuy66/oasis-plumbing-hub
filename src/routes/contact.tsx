@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
-import { useState } from "react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 const description =
-  "Contact Oasis Plumbing of Texas in Mobile — call (817) 880-9071 for same-day service, or request a free quote online. Mon–Sat, 8 AM – 6 PM.";
+  "Contact Oasis Plumbing of Texas in Mobile — call (817) 880-9071 for same-day service. Mon–Sat, 8 AM – 6 PM.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -22,11 +21,10 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [sent, setSent] = useState(false);
   return (
     <Layout>
       <section className="mx-auto max-w-7xl px-5 py-16 md:py-24">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr]">
+        <div className="max-w-2xl">
           <div>
             <p className="font-display text-sm uppercase tracking-[0.25em] text-copper">Contact</p>
             <h1 className="mt-3 text-5xl font-semibold leading-[1.05] md:text-6xl">Let's get your water flowing.</h1>
@@ -60,25 +58,8 @@ function ContactPage() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </Layout>
-  );
-}
-
-function Field({ label, name, type = "text", required, placeholder }: { label: string; name: string; type?: string; required?: boolean; placeholder?: string }) {
-  return (
-    <div>
-      <label htmlFor={name} className="mb-1.5 block text-sm font-medium">{label}{required && <span className="text-copper"> *</span>}</label>
-      <input
-        id={name}
-        name={name}
-        type={type}
-        required={required}
-        placeholder={placeholder}
-        className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition focus:border-copper focus:ring-2 focus:ring-copper/30"
-      />
-    </div>
   );
 }
