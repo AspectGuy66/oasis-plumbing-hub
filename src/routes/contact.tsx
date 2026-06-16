@@ -61,48 +61,6 @@ function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-border bg-card p-8 shadow-elegant md:p-10">
-            <h2 className="font-display text-2xl font-semibold">Request a quote</h2>
-            <p className="mt-1 text-sm text-muted-foreground">Tell us about the job and we'll get back within one business day.</p>
-
-            {sent ? (
-              <div className="mt-8 rounded-2xl border border-copper/40 bg-copper/10 p-6 text-center">
-                <Mail className="mx-auto h-6 w-6 text-copper" />
-                <p className="mt-3 font-display text-lg font-semibold">Thanks — we've got it.</p>
-                <p className="mt-1 text-sm text-muted-foreground">For anything urgent, please call (817) 880-9071.</p>
-              </div>
-            ) : (
-              <form
-                className="mt-6 grid gap-4"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSent(true);
-                }}
-              >
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <Field label="Name" name="name" required />
-                  <Field label="Phone" name="phone" type="tel" required />
-                </div>
-                <Field label="Email" name="email" type="email" />
-                <Field label="Address (city)" name="city" placeholder="Mobile, TX" />
-                <div>
-                  <label className="mb-1.5 block text-sm font-medium">How can we help?</label>
-                  <textarea
-                    required
-                    rows={5}
-                    className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition focus:border-copper focus:ring-2 focus:ring-copper/30"
-                    placeholder="Leaking under the kitchen sink, need a water heater replaced…"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-deep px-6 py-3.5 text-sm font-semibold text-deep-foreground shadow-elegant transition-transform hover:-translate-y-0.5"
-                >
-                  <Send className="h-4 w-4" /> Send request
-                </button>
-              </form>
-            )}
-          </div>
         </div>
       </section>
     </Layout>
