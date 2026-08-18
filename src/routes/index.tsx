@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ShieldCheck, Clock4, Wrench, Droplets, Flame, Bath, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-plumber.jpg";
+import heroAsset from "@/assets/hero-kitchen.jpg.asset.json";
+const heroImage = heroAsset.url;
 import pipesImage from "@/assets/pipes.jpg";
 import { Layout } from "@/components/site/Layout";
 import { CTASection } from "@/components/site/CTA";
@@ -108,7 +109,7 @@ function HomePage() {
             <div className="overflow-hidden rounded-[2rem] border border-border shadow-elegant">
               <img
                 src={heroImage}
-                alt="Licensed Oasis Plumbing technician repairing a kitchen sink in a Mobile, TX home"
+                alt="Oasis Plumbing technician working under a kitchen sink in a Mobile, TX home"
                 width={1600}
                 height={1100}
                 className="h-full w-full object-cover"
