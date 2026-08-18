@@ -60,7 +60,7 @@ function HomePage() {
     <Layout>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:grid-cols-[1.05fr_1fr] md:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:grid-cols-[1fr_1.25fr] md:py-24">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-foreground/70 shadow-card">
               <Star className="h-3.5 w-3.5 fill-copper text-copper" />
