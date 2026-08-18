@@ -19,18 +19,18 @@ export function CTASection() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            <a
-              href="tel:+18178809071"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-copper px-6 py-4 text-base font-semibold text-copper-foreground transition-transform hover:-translate-y-0.5"
+            <div
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-copper px-6 py-4 text-base font-semibold text-copper-foreground"
+              aria-label="Phone number (817) 880-9071"
             >
               <Phone className="h-5 w-5" />
-              Call (817) 880-9071
-            </a>
+              (817) 880-9071
+            </div>
             <Link
-              to="/contact"
+              to="/services"
               className="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-4 text-base font-semibold text-deep-foreground hover:bg-white/5"
             >
-              Request a quote online
+              Explore our services
             </Link>
           </div>
         </div>

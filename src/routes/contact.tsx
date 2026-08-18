@@ -34,13 +34,13 @@ function ContactPage() {
             </p>
 
             <div className="mt-10 space-y-5">
-              <a href="tel:+18178809071" className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-card transition hover:border-copper">
+              <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-card">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-deep text-deep-foreground"><Phone className="h-5 w-5" /></span>
                 <span className="min-w-0">
                   <span className="block text-xs uppercase tracking-wider text-muted-foreground">Call</span>
-                  <span className="block font-display text-xl font-semibold">(817) 880-9071</span>
+                  <span className="block font-display text-xl font-semibold tracking-wide">(817) 880-9071</span>
                 </span>
-              </a>
+              </div>
               <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-card">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-deep text-deep-foreground"><MapPin className="h-5 w-5" /></span>
                 <div className="min-w-0">

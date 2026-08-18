@@ -16,12 +16,12 @@ export function SiteFooter() {
             Family-trusted plumbing in Mobile and the surrounding Texas communities.
             Honest pricing, fast response, work guaranteed.
           </p>
-          <a
-            href="tel:+18178809071"
+          <div
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-copper px-5 py-3 text-sm font-semibold text-copper-foreground"
+            aria-label="Phone number (817) 880-9071"
           >
             <Phone className="h-4 w-4" /> (817) 880-9071
-          </a>
+          </div>
         </div>
 
         <div>
