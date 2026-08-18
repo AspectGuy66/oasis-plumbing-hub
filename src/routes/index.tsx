@@ -109,7 +109,7 @@ function HomePage() {
             <div className="overflow-hidden rounded-[2rem] border border-border shadow-elegant">
               <img
                 src={heroImage}
-                alt="Licensed Oasis Plumbing technician repairing a kitchen sink in a Mobile, TX home"
+                alt="Oasis Plumbing technician working under a kitchen sink in a Mobile, TX home"
                 width={1600}
                 height={1100}
                 className="h-full w-full object-cover"
