@@ -112,7 +112,7 @@ function HomePage() {
                 alt="Oasis Plumbing technician working under a kitchen sink in a Mobile, TX home"
                 width={1600}
                 height={1100}
-                className="h-full w-full object-cover"
+                className="aspect-[4/3] w-full object-cover md:aspect-[5/4]"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-border bg-card p-4 shadow-elegant sm:block">
