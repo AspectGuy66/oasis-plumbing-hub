@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Phone, Star, ShieldCheck, Clock4, Wrench, Droplets, Flame, Bath, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-plumber.jpg";
+import heroAsset from "@/assets/hero-kitchen.jpg.asset.json";
+const heroImage = heroAsset.url;
 import pipesImage from "@/assets/pipes.jpg";
 import { Layout } from "@/components/site/Layout";
 import { CTASection } from "@/components/site/CTA";
