@@ -40,13 +40,13 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a
-            href="tel:+18178809071"
-            className="hidden items-center gap-2 rounded-full bg-copper px-4 py-2.5 text-sm font-semibold text-copper-foreground shadow-card transition-transform hover:-translate-y-0.5 sm:inline-flex"
+          <span
+            className="hidden items-center gap-2 rounded-full bg-copper px-4 py-2.5 text-sm font-semibold text-copper-foreground shadow-card sm:inline-flex"
+            aria-label="Phone number (817) 880-9071"
           >
             <Phone className="h-4 w-4" />
             (817) 880-9071
-          </a>
+          </span>
           <button
             type="button"
             aria-label="Toggle menu"
@@ -73,13 +73,13 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
-            <a
-              href="tel:+18178809071"
+            <span
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-copper px-4 py-3 text-sm font-semibold text-copper-foreground"
+              aria-label="Phone number (817) 880-9071"
             >
               <Phone className="h-4 w-4" />
-              Call (817) 880-9071
-            </a>
+              (817) 880-9071
+            </span>
           </nav>
         </div>
       )}

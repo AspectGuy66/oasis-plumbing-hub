@@ -75,13 +75,13 @@ function HomePage() {
               repipe — one call handles it.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="tel:+18178809071"
-                className="inline-flex items-center gap-2 rounded-full bg-deep px-6 py-3.5 text-sm font-semibold text-deep-foreground shadow-elegant transition-transform hover:-translate-y-0.5"
+              <span
+                className="inline-flex items-center gap-2 rounded-full bg-deep px-6 py-3.5 text-sm font-semibold text-deep-foreground shadow-elegant"
+                aria-label="Phone number (817) 880-9071"
               >
                 <Phone className="h-4 w-4" />
-                Call (817) 880-9071
-              </a>
+                (817) 880-9071
+              </span>
               <Link
                 to="/services"
                 className="inline-flex items-center rounded-full border border-border bg-card px-6 py-3.5 text-sm font-semibold text-foreground hover:bg-secondary"
